@@ -14,9 +14,10 @@ header {
   background-color: #8b0000;
   text-align: center;
   padding: 10px;
-  margin: -197px 0;
   width: 100%;
   position: fixed;
+  top: 0;
+  Left:0;
   box-shadow: 5px 5px 3px 0px rgba(50, 50, 50, 0.5);
 }
 
@@ -43,7 +44,7 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #ffffff;
 }
@@ -53,7 +54,7 @@ nav > ul > li li > a {
   display: inline-block;
   width: 100%;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #ffffff;
 }
@@ -90,6 +91,15 @@ nav > ul > li li > a:active {
   color: #000000;
   text-decoration: none;
 }
+nav > ul ul {
+  display: none;
+  position: absolute;
+  margin-top: 8px;
+  background: white;
+}
+nav > ul li:hover ul {
+  display: block;
+}
 
 body {
   background-color: #ffffff;
@@ -98,9 +108,10 @@ body {
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  margin: 197px 24px;
+  margin: 0 24px;
   color: #A0A09F;
 }
+
 
 h1, h2, h3, h4 {
   line-height: 1.8;
@@ -108,7 +119,7 @@ h1, h2, h3, h4 {
   color: #8B0000;
 }
 
-#logo {
+.logo {
   display: inline-block;
   width: 264px;
 }
@@ -149,7 +160,9 @@ h1, h2, h3, h4 {
 
 h1 {
   color: #ffffff;
+  background-color: #8b0000;
   font-size: 2.25em;
+  text-align: center;
 }
 
 h2 {
@@ -185,7 +198,8 @@ h2 {
 }
 
 img {
-  width: 100%;
+  width: 75%;
+  height: 75%;
 }
 
 a {
@@ -243,59 +257,6 @@ a:active {
   margin: 24px 0;
 }
 
-@media only screen and (min width: 640px) {
-  header {
-    text-align: unset;
-    padding: 24px 0 12px;
-  }
-  nav {
-    width: auto;
-    float: right;
-    margine-top: 4px;
-  }
-}
-
-@media only screen and (min width: 1024px) {
-  header {
-    text-align: unset;
-    padding: 24px 0 12px;
-  }
-  nav {
-    width: auto;
-    float: right;
-    margine-top: 4px;
-  }
-}
-
-@media only screen and (min width: 1440px) {
-  header {
-    text-align: unset;
-    padding: 24px 0 12px;
-  }
-  nav {
-    width: auto;
-    float: right;
-    margine-top: 4px;
-  }
-}
-
-.col-md-6 {
-  width: 50%;
-  float: left;
-}
-.col-lg-5 {
-  width: 42%;
-  float: right;
-}
-.col-lg-7 {
-  width: 58%;
-  float: left;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 0 16px;
-}
 .row::after {
   content: "";
   clear: both;
@@ -326,4 +287,76 @@ a:active {
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 24px 0 12px;
+  }
+  body {
+    margin-top: 247px
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 24px 0 12px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-lg-5 {
+    width: 38%;
+    float: right;
+  }
+  .col-lg-7 {
+    width: 62%;
+    float: left;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+    padding: 24px 0 12px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-lg-5 {
+    width: 38%;
+    float: right;
+  }
+  .col-lg-7 {
+    width: 62%;
+    float: left;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 16px;
+  }
 }
