@@ -99,6 +99,7 @@ nav > ul ul {
 }
 nav > ul li:hover ul {
   display: block;
+  position: absolute;
 }
 
 body {
@@ -198,8 +199,7 @@ h2 {
 }
 
 img {
-  width: 75%;
-  height: 75%;
+  width: 100%;
 }
 
 a {
