@@ -12,7 +12,6 @@ Font: Montserrat- light, regular, medium, medium italic, bold, bold italic*/
 
 header {
   background-color: #8b0000;
-  text-align: center;
   padding: 10px;
   width: 100%;
   position: fixed;
@@ -32,9 +31,6 @@ nav > ul ul{
   margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
 nav > ul > li li {
   display: inline-block;
 }
@@ -102,6 +98,39 @@ nav > ul li:hover ul {
   position: absolute;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 24px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 20px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid A0A09F;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -112,7 +141,9 @@ body {
   margin: 0 24px;
   color: #A0A09F;
 }
-
+main {
+  padding-top: 56px;
+}
 
 h1, h2, h3, h4 {
   line-height: 1.8;
@@ -122,7 +153,8 @@ h1, h2, h3, h4 {
 
 .logo {
   display: inline-block;
-  width: 264px;
+  width: 244px;
+  margin: 0;
 }
 #hero {
   background-color: #8b0000;
@@ -291,20 +323,50 @@ a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
   header {
-    text-align: unset;
+    text-align: left;
     padding: 24px 0 12px;
   }
   body {
-    margin-top: 247px
+    margin-top: 90px
+  }
+  nav {
+    width: auto;
+    text-align: right;
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  header {
+    text-align: left;
+    padding: 24px 0 12px;
+  }
+  body {
+    margin-top: 110px
   }
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
   .col-md-6 {
     width: 50%;
     float: left;
