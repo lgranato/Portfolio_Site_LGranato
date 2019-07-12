@@ -87,15 +87,14 @@ nav > ul > li li > a:active {
   color: #000000;
   text-decoration: none;
 }
-nav > ul ul {
+nav > ul li ul {
   display: none;
   position: absolute;
   margin-top: 8px;
-  background: white;
+  text-transform: none;
 }
-nav > ul li:hover ul {
+nav > ul > li:hover > ul {
   display: block;
-  position: absolute;
 }
 
 .navtoggle li:not(:last-child) {
@@ -121,10 +120,10 @@ nav > ul li:hover ul {
 .navtoggle.responsive nav {
   padding: 20px 0 0;
 }
-.navtoggle.responsive li  {
+.navtoggle.responsive ul li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(250, 56,50, 40);
+  border-top: 1px solid rgba(250, 56, 50, 40);
 }
 
 .navtoggle.responsive li:last-child  {
@@ -165,6 +164,7 @@ h1, h2, h3, h4 {
 }
 #hero span {
   display: block;
+  width: 100%;
 }
 
 #hero .row {
@@ -279,7 +279,7 @@ a:active {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 2800px;
   padding: 0 16px;
   margin-left: auto;
   margin-right: auto;
@@ -336,6 +336,9 @@ a:active {
     text-align: right;
     margin-top: 4px;
   }
+  nav > ul > li > ul > li {
+    position: relative;
+    float: right;
 }
 
 @media only screen and (min-width: 641px) {
@@ -352,18 +355,25 @@ a:active {
     margin-top: 4px;
   }
   nav > ul {
-    margin: 1em 0;
+    margin: 2em 0;
   }
 
   nav > ul > li {
     display: inline-block;
+    position: relative;
+    height: 40px;
+  }
+  nav > ul > li > ul {
+    position: absolute;
+    width: 200px;
+    height: 32px;
   }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle li:last-child {
+  .navtoggle nav > ul > li:last-child {
   display: none;
 }
 
@@ -410,6 +420,10 @@ a:active {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  body {
+    width: 100%;
   }
   .col-lg-5 {
     width: 38%;
