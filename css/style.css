@@ -25,6 +25,7 @@ nav > ul {
   padding: 0;
   margin: 0;
 }
+
 nav > ul ul{
   list-style-type: none;
   padding: 0;
@@ -38,7 +39,6 @@ nav > ul > li > a {
   padding: 0 16px;
   margin: 0;
   display: inline-block;
-  width: 100%;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -48,7 +48,6 @@ nav > ul > li li > a {
   padding: 0 16px;
   margin: 0;
   display: inline-block;
-  width: 100%;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -105,6 +104,9 @@ nav > ul > li:hover > ul {
   position: relative;
 }
 
+.navtoggle.responsive nav {
+  padding: 20px 0 0;
+}
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -115,11 +117,9 @@ nav > ul > li:hover > ul {
 
 .navtoggle.responsive li  {
   display: block;
+  text-align: right;
 }
 
-.navtoggle.responsive nav {
-  padding: 20px 0 0;
-}
 .navtoggle.responsive ul li  {
   display: block;
   padding: 10px 0;
@@ -172,6 +172,11 @@ h1, h2, h3, h4 {
   display: inline-block;
   width: 100%;
 }
+
+#hero .container {
+  width: 100%;
+}
+
 #about .row {
   margin: 24px 0;
   display: inline-block;
@@ -328,16 +333,22 @@ a:active {
     text-align: left;
     padding: 24px 0 12px;
   }
-  body {
-    margin-top: 90px
-  }
+
   nav {
     width: auto;
     text-align: right;
     margin-top: 4px;
   }
-  /*nav > ul > li > ul > li {
-    float: right;*/
+  nav > ul {
+    text-align: right;
+  }
+  body {
+    padding: 0;
+  }
+.navtoggle.tap {
+  position: relative;
+  display: inline-block;
+  text-align: right;
 }
 
 @media only screen and (min-width: 641px) {
@@ -345,36 +356,42 @@ a:active {
     text-align: left;
     padding: 24px 0 12px;
   }
-  body {
-    margin-top: 110px
-  }
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
+
   nav > ul {
-    margin: 2em 0;
+    text-align: right;
   }
 
   nav > ul > li {
-    display: inline-block;
-    position: relative;
-    height: 40px;
-  }
+      display: inline-block;
+      position: relative;
+      height: 40px;
+    }
+
   nav > ul > li > ul {
     position: absolute;
     width: 200px;
     height: 32px;
   }
 
+  nav > ul > li:hover > ul {
+    display: none;
+    position: absolute;
+}
+
+  .navtoggle li .icon {
+    display: none;
+  }
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle nav > ul > li:last-child {
-  display: none;
-}
+  .navtoggle nav > li:last-child {
+    display: none;
+  }
+
+  body {
+    margin-top: 110px
+  }
 
   .col-md-6 {
     width: 50%;
@@ -391,11 +408,33 @@ a:active {
     text-align: unset;
     padding: 24px 0 12px;
   }
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+
+  nav > ul > li {
+      display: inline-block;
+      position: relative;
+      height: 40px;
+    }
+
+  nav > ul > li > ul {
+    position: absolute;
+    width: 200px;
+    height: 32px;
+    }
+
+
+
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+
+    .navtoggle nav > li:last-child {
+      display: none;
   }
+
+  body {
+    margin-top: 110px
+  }
+
   .col-lg-5 {
     width: 38%;
     float: right;
@@ -421,9 +460,30 @@ a:active {
     margin-top: 4px;
   }
 
-  body {
-    width: 100%;
+  nav > ul > li {
+    display: inline-block;
+    position: relative;
+    height: 40px;
   }
+
+  nav > ul > li > ul {
+    position: absolute;
+    width: 200px;
+    height: 32px
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle nav > li:last-child {
+    display: none;
+}
+
+body {
+  margin-top: 110px
+}
+
   .col-lg-5 {
     width: 38%;
     float: right;

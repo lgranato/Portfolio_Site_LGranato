@@ -7,5 +7,8 @@ function menuToggle() {
   } else {
     x.className = 'navtoggle';
   }
-
+  $('.has-sub').click( function() {
+      e.preventDefault();
+      $(this).parent().toggleClass('tap');
+  });
 }
