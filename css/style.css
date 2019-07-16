@@ -30,11 +30,9 @@ nav > ul ul{
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: block;
 }
 
-nav > ul > li li {
-  display: inline-block;
-}
 nav > ul > li > a {
   padding: 0 16px;
   margin: 0;
@@ -48,10 +46,11 @@ nav > ul > li li > a {
   padding: 0 16px;
   margin: 0;
   display: inline-block;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #ffffff;
+  font-size: .8em;
 }
 
 nav > ul > li > a:visited {
@@ -86,12 +85,7 @@ nav > ul > li li > a:active {
   color: #000000;
   text-decoration: none;
 }
-nav > ul li ul {
-  display: none;
-  position: absolute;
-  margin-top: 8px;
-  text-transform: none;
-}
+
 nav > ul > li:hover > ul {
   display: block;
 }
@@ -107,6 +101,7 @@ nav > ul > li:hover > ul {
 .navtoggle.responsive nav {
   padding: 20px 0 0;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -116,7 +111,7 @@ nav > ul > li:hover > ul {
 }
 
 .navtoggle.responsive li  {
-  display: block;
+  display: inline-block;
   text-align: right;
 }
 
@@ -196,6 +191,10 @@ h1, h2, h3, h4 {
   padding-bottom: 24px; border-bottom: 2px solid #4a4a4a;
 }
 
+#content {
+  text-align: center;
+  padding-top: 160px;
+}
 h1 {
   color: #ffffff;
   background-color: #8b0000;
@@ -358,6 +357,7 @@ a:active {
   }
 
   nav > ul {
+    display: inline-block;
     text-align: right;
   }
 
@@ -368,6 +368,7 @@ a:active {
     }
 
   nav > ul > li > ul {
+    display: none;
     position: absolute;
     width: 200px;
     height: 32px;
@@ -377,15 +378,20 @@ a:active {
     display: none;
     position: absolute;
 }
+.navtoggle.responsive li .icon {
+  display: none;
+}
 
-  .navtoggle li .icon {
-    display: none;
-  }
-  .navtoggle li:not(:last-child) {
+.navtoggle.responsive li  {
+  display: inline-block;
+  text-align: left;
+}
+
+  .navtoggle.responsive li:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle nav > li:last-child {
+  .navtoggle.responsive nav li:last-child {
     display: none;
   }
 
@@ -421,13 +427,15 @@ a:active {
     height: 32px;
     }
 
-
+    .navtoggle li.icon {
+      display: none;
+    }
 
     .navtoggle li:not(:last-child) {
       display: inline-block;
     }
 
-    .navtoggle nav > li:last-child {
+    .navtoggle nav li:last-child {
       display: none;
   }
 
@@ -471,12 +479,15 @@ a:active {
     width: 200px;
     height: 32px
   }
+  .navtoggle.responsive li.icon {
+    display: none;
+  }
 
-  .navtoggle li:not(:last-child) {
+  .navtoggle.responsive li:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle nav > li:last-child {
+  .navtoggle.responsive nav li:last-child {
     display: none;
 }
 
