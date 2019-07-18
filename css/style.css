@@ -118,7 +118,7 @@ nav > ul > li:hover > ul {
 .navtoggle.responsive ul li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(250, 56, 50, 40);
+  border-top: 1px solid rgba(250, 56, 50, .4);
 }
 
 .navtoggle.responsive li:last-child  {
@@ -132,7 +132,6 @@ body {
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  margin: 0 24px;
   color: #A0A09F;
 }
 main {
@@ -169,7 +168,7 @@ h1, h2, h3, h4 {
 }
 
 #hero .container {
-  width: 100%;
+  width: 80%;
 }
 
 #about .row {
@@ -285,8 +284,6 @@ a:active {
 .container {
   max-width: 2800px;
   padding: 0 16px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .row {
@@ -349,7 +346,7 @@ a:active {
   display: inline-block;
   text-align: right;
 }
-
+}
 @media only screen and (min-width: 641px) {
   header {
     text-align: left;
@@ -384,19 +381,24 @@ a:active {
 
 .navtoggle.responsive li  {
   display: inline-block;
-  text-align: left;
+  text-align: right;
 }
 
-  .navtoggle.responsive li:not(:last-child) {
+  .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle.responsive nav li:last-child {
+  .navtoggle li:last-child {
     display: none;
   }
 
   body {
     margin-top: 110px
+  }
+
+  p{
+    width: 80%;
+    margin: auto;
   }
 
   .col-md-6 {
@@ -435,7 +437,7 @@ a:active {
       display: inline-block;
     }
 
-    .navtoggle nav li:last-child {
+    .navtoggle li:last-child {
       display: none;
   }
 
@@ -443,6 +445,10 @@ a:active {
     margin-top: 110px
   }
 
+p{
+  margin: auto;
+  width: 80%;
+}
   .col-lg-5 {
     width: 38%;
     float: right;
@@ -483,16 +489,21 @@ a:active {
     display: none;
   }
 
-  .navtoggle.responsive li:not(:last-child) {
+  .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle.responsive nav li:last-child {
+  .navtoggle li:last-child {
     display: none;
 }
 
 body {
   margin-top: 110px
+}
+
+p{
+  margin: auto;
+  width: 80%;
 }
 
   .col-lg-5 {
