@@ -21,9 +21,10 @@ header {
 }
 
 nav > ul {
+  position: relative;
+  display: inline-block;
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 nav > ul ul{
@@ -41,6 +42,7 @@ nav > ul > li > a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #ffffff;
+  position: relative;
 }
 nav > ul > li li > a {
   padding: 0 16px;
@@ -51,6 +53,7 @@ nav > ul > li li > a {
   font-weight: 700;
   color: #ffffff;
   font-size: .8em;
+  position: relative;
 }
 
 nav > ul > li > a:visited {
@@ -88,6 +91,8 @@ nav > ul > li li > a:active {
 
 nav > ul > li:hover > ul {
   display: block;
+  position: absolute;
+  margin-right: 50px;
 }
 
 .navtoggle li:not(:last-child) {
@@ -334,6 +339,7 @@ a:active {
     width: auto;
     text-align: right;
     margin-top: 4px;
+    float: right;
   }
   nav > ul {
     text-align: right;
@@ -357,7 +363,6 @@ nav {
 }
   nav > ul {
     display: inline-block;
-    text-align: right;
   }
 
   nav > ul > li {
@@ -367,31 +372,34 @@ nav {
     }
 
   nav > ul > li > ul {
-    display: none;
+    display: inline-block;
     position: absolute;
     width: 200px;
     height: 32px;
   }
 
   nav > ul > li:hover > ul {
-    display: none;
+    display: block;
     position: absolute;
 }
 .navtoggle.responsive li .icon {
   display: none;
 }
 
+.navtoggle li .icon{
+  display: none;
+}
 .navtoggle.responsive li  {
   display: inline-block;
-  text-align: right;
+  position: relative;
+}
+
+.navtoggle.responsive li:last-child {
+  display: none;
 }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
   }
 
   body {
@@ -433,18 +441,29 @@ nav {
     width: 200px;
     height: 32px;
     }
+    nav > ul > li:hover > ul {
+      display: block;
+      position: absolute;
+  }
+  .navtoggle.responsive li .icon {
+    display: none;
+  }
 
-    .navtoggle li.icon {
-      display: none;
-    }
+  .navtoggle li .icon{
+    display: none;
+  }
+  .navtoggle.responsive li  {
+    display: inline-block;
+    position: relative;
+  }
+
+  .navtoggle.responsive li:last-child {
+    display: none;
+  }
 
     .navtoggle li:not(:last-child) {
       display: inline-block;
     }
-
-    .navtoggle li:last-child {
-      display: none;
-  }
 
   body {
     margin-top: 110px
@@ -490,17 +509,30 @@ p{
     width: 200px;
     height: 32px
   }
-  .navtoggle.responsive li.icon {
-    display: none;
-  }
+
+  nav > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+}
+.navtoggle.responsive li .icon {
+  display: none;
+}
+
+.navtoggle li .icon{
+  display: none;
+}
+.navtoggle.responsive li  {
+  display: inline-block;
+  position: relative;
+}
+
+.navtoggle.responsive li:last-child {
+  display: none;
+}
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
-
-  .navtoggle li:last-child {
-    display: none;
-}
 
 body {
   margin-top: 110px
