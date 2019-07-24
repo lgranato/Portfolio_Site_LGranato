@@ -352,7 +352,9 @@ a:active {
     text-align: left;
     padding: 24px 0 12px;
   }
-
+nav {
+  float: right;
+}
   nav > ul {
     display: inline-block;
     text-align: right;
@@ -417,6 +419,9 @@ a:active {
     padding: 24px 0 12px;
   }
 
+nav {
+  float: right;
+}
   nav > ul > li {
       display: inline-block;
       position: relative;
