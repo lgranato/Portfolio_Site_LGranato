@@ -1,7 +1,7 @@
 /* Brand Colors: #8B0000 (red-accent)
         #000000 (black)
         #ffffff (white-background)
-        #A0A09F (grey-font color)
+        #767675 (grey-font color)
         #B950D4 (purple-Feed_Your_Brain accent color)
 
 Font: Montserrat- light, regular, medium, medium italic, bold, bold italic*/
@@ -137,7 +137,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  color: #A0A09F;
+  color: #767675;
 }
 main {
   padding-top: 56px;
@@ -200,7 +200,7 @@ h1, h2, h3, h4 {
   padding-top: 160px;
 }
 h1 {
-  color: #ffffff;
+  /*color: #ffffff;*/
   background-color: #8b0000;
   font-size: 2.25em;
   text-align: center;
@@ -532,7 +532,7 @@ p{
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
-  
+
 body {
   margin-top: 110px
 }
