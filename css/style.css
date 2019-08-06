@@ -1,10 +1,10 @@
 /* Brand Colors: #8B0000 (red-accent)
         #000000 (black)
         #ffffff (white-background)
-        #A0A09F (grey-font color)
+        #767675 (grey-font color)
         #B950D4 (purple-Feed_Your_Brain accent color)
 
-Font: Montserrat- light, regular, medium, medium italic, bold, bold italic*/
+Font: Montserrat- light, regular, medium, medium italic, bold, bold italic */
 
 * {
   box-sizing: border-box;
@@ -16,18 +16,18 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  Left:0;
+  left: 0;
   box-shadow: 5px 5px 3px 0px rgba(50, 50, 50, 0.5);
 }
 
 nav > ul {
   position: relative;
-  display: inline-block;
+  display: flex;
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul ul{
+nav > ul ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -44,6 +44,7 @@ nav > ul > li > a {
   color: #ffffff;
   position: relative;
 }
+
 nav > ul > li li > a {
   padding: 0 16px;
   margin: 0;
@@ -52,7 +53,7 @@ nav > ul > li li > a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #ffffff;
-  font-size: .8em;
+  font-size: 0.8em;
   position: relative;
 }
 
@@ -60,32 +61,39 @@ nav > ul > li > a:visited {
   color: #ffffff;
   text-decoration: none;
 }
+
 nav > ul > li > a:hover {
   color: #bf0000;
   text-decoration: none;
 }
+
 nav > ul > li > a:focus {
-  color: #D85800;
+  color: #d85800;
   text-decoration: none;
 }
+
 nav > ul > li > a:active {
   color: #000000;
   text-decoration: none;
 }
+
 nav > ul > li li > a:visited {
   color: #ffffff;
   text-decoration: none;
 }
+
 nav > ul > li li > a:hover {
   color: #bf0000;
   text-decoration: none;
 }
+
 nav > ul > li li > a:focus {
-  color: #D85800;
+  color: #d85800;
   text-decoration: none;
 }
+
 nav > ul > li li > a:active {
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
@@ -115,30 +123,31 @@ nav > ul > li:hover > ul {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: inline-block;
   text-align: right;
 }
 
-.navtoggle.responsive ul li  {
+.navtoggle.responsive ul li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(250, 56, 50, .4);
+  border-top: 1px solid rgba(250, 56, 50, 0.4);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  color: #A0A09F;
+  color: #767675;
 }
+
 main {
   padding-top: 56px;
 }
@@ -146,7 +155,7 @@ main {
 h1, h2, h3, h4 {
   line-height: 1.8;
   font-weight: 700;
-  color: #8B0000;
+  color: #8b0000;
 }
 
 .logo {
@@ -154,6 +163,7 @@ h1, h2, h3, h4 {
   width: 244px;
   margin: 0;
 }
+
 #hero {
   background-color: #8b0000;
   padding: 20px 0;
@@ -161,6 +171,7 @@ h1, h2, h3, h4 {
   width: 100%;
   text-align: center;
 }
+
 #hero span {
   display: block;
   width: 100%;
@@ -181,26 +192,29 @@ h1, h2, h3, h4 {
   display: inline-block;
   width: 100%;
 }
+
 #skillstools .row {
   margin: 24px 0;
   display: inline-block;
   width: 100%;
 }
+
 #footer {
   text-align: center;
   position: relative;
 }
 
 #samplework .row {
-  padding-bottom: 24px; border-bottom: 2px solid #4a4a4a;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #4a4a4a;
 }
 
 #content {
   text-align: center;
   padding-top: 160px;
 }
+
 h1 {
-  color: #ffffff;
   background-color: #8b0000;
   font-size: 2.25em;
   text-align: center;
@@ -213,29 +227,34 @@ h2 {
 .page-index h3 {
   font-size: 1.5em;
   font-style: italic;
-  color: #B950D4;
+  color: #b950d4;
 }
+
 .page-about h2 {
   margin-top: 0;
 }
+
 .page-fyb h1 {
   font-size: 2.75em;
-  text-align:center;
+  text-align: center;
 }
+
 .page-fyb h2 {
-  color: #B950D4;
+  color: #b950d4;
 }
+
 .page-fyb .footer h2 {
   color: #8b0000;
 }
+
 .page-fyb h3 {
-  color: #000000;
+  color: #000;
   text-align: center;
 }
 
 .page-fyb h4 {
   text-align: center;
-  color: #000000;
+  color: #000;
 }
 
 img {
@@ -246,27 +265,29 @@ a {
   color: #8b0000;
   text-decoration: none;
 }
+
 a:hover {
   color: #bf0000;
   text-decoration: underline;
 }
+
 a:visited {
-  color: #D85800;
+  color: #d85800;
 }
+
 a:active {
-  color: #A64300;
+  color: #a64300;
 }
 
 .button {
   display: inline-block;
-  background-color: #8B0000;
-  color: #ffffff !important;
+  background-color: #8b0000;
+  color: #fff !important;
   font-weight: 700;
   padding: 12px;
   border-radius: 6px;
   transition: 0.2s opacity;
   text-decoration: none;
-
 }
 
 .button:hover {
@@ -274,16 +295,16 @@ a:active {
   text-decoration: none;
 }
 
-.button.contact  {
+.button.contact {
   background-color: transparent;
-  color: #BF0000 !important;
+  color: #bf0000 !important;
   text-transform: uppercase;
-  border: 3px solid #BF0000;
+  border: 3px solid #bf0000;
 }
 
-.button.contact:hover{
-  background-color:#8B0000;
-  color: #ffffff !important;
+.button.contact:hover {
+  background-color: #8b0000;
+  color: #fff !important;
 }
 
 .container {
@@ -302,8 +323,8 @@ a:active {
 }
 
 @keyframes color-change {
-  from {fill: #F2ED41;}
-  to {fill: #DD980E;}
+  from { fill: #f2ed41; }
+  to { fill: #dd980e; }
 }
 
 #vector-transition {
@@ -311,20 +332,25 @@ a:active {
   max-width: 100%;
   height: auto;
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(300px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(300px, 50px); }
 }
+
 .cloud-front {
   animation: 18s cloud-move infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
@@ -332,7 +358,6 @@ a:active {
 @media only screen and (max-width: 640px) {
   header {
     text-align: left;
-    padding: 24px 0 12px;
   }
 
   nav {
@@ -341,35 +366,40 @@ a:active {
     margin-top: 4px;
     float: right;
   }
+
   nav > ul {
     text-align: right;
   }
+
   body {
     padding: 0;
   }
-.navtoggle.tap {
-  position: relative;
-  display: inline-block;
-  text-align: right;
+
+  .navtoggle.tap {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+  }
 }
-}
+
 @media only screen and (min-width: 641px) {
   header {
     text-align: left;
-    padding: 24px 0 12px;
   }
-nav {
-  float: right;
-}
+
+  nav {
+    float: right;
+  }
+
   nav > ul {
     display: inline-block;
   }
 
   nav > ul > li {
-      display: inline-block;
-      position: relative;
-      height: 40px;
-    }
+    display: inline-block;
+    position: relative;
+    height: 40px;
+  }
 
   nav > ul > li > ul {
     display: inline-block;
@@ -381,32 +411,35 @@ nav {
   nav > ul > li:hover > ul {
     display: block;
     position: absolute;
-}
-.navtoggle.responsive li .icon {
-  display: none;
-}
+  }
 
-.navtoggle li .icon{
-  display: none;
-}
-.navtoggle.responsive li  {
-  display: inline-block;
-  position: relative;
-}
+  .navtoggle.responsive li .icon {
+    display: none;
+  }
 
-.navtoggle.responsive li:last-child {
-  display: none;
-}
+  .navtoggle li .icon {
+    display: none;
+  }
+
+  .navtoggle.responsive li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .navtoggle.responsive li:last-child {
+    display: none;
+  }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
   body {
-    margin-top: 110px
+    margin-top: 110px;
+    margin-left: 40px;
   }
 
-  p{
+  p {
     width: 80%;
     margin: auto;
   }
@@ -415,6 +448,7 @@ nav {
     width: 50%;
     float: left;
   }
+
   [class*="col-"] {
     float: left;
     padding: 0 16px;
@@ -427,32 +461,36 @@ nav {
     padding: 24px 0 12px;
   }
 
-nav {
-  float: right;
-}
+  nav {
+    float: right;
+  }
+
   nav > ul > li {
-      display: inline-block;
-      position: relative;
-      height: 40px;
-    }
+    display: inline-block;
+    position: relative;
+    height: 40px;
+  }
 
   nav > ul > li > ul {
     position: absolute;
     width: 200px;
     height: 32px;
-    }
-    nav > ul > li:hover > ul {
-      display: block;
-      position: absolute;
   }
+
+  nav > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+  }
+
   .navtoggle.responsive li .icon {
     display: none;
   }
 
-  .navtoggle li .icon{
+  .navtoggle li .icon {
     display: none;
   }
-  .navtoggle.responsive li  {
+
+  .navtoggle.responsive li {
     display: inline-block;
     position: relative;
   }
@@ -461,26 +499,29 @@ nav {
     display: none;
   }
 
-    .navtoggle li:not(:last-child) {
-      display: inline-block;
-    }
-
-  body {
-    margin-top: 110px
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
 
-p{
-  margin: auto;
-  width: 80%;
-}
+  body {
+    margin-top: 110px;
+  }
+
+  p {
+    margin: auto;
+    width: 80%;
+  }
+
   .col-lg-5 {
     width: 38%;
     float: right;
   }
+
   .col-lg-7 {
     width: 62%;
     float: left;
   }
+
   [class*="col-"] {
     float: left;
     padding: 0 16px;
@@ -492,6 +533,7 @@ p{
     text-align: unset;
     padding: 24px 0 12px;
   }
+
   nav {
     width: auto;
     float: right;
@@ -507,52 +549,55 @@ p{
   nav > ul > li > ul {
     position: absolute;
     width: 200px;
-    height: 32px
+    height: 32px;
   }
 
   nav > ul > li:hover > ul {
     display: block;
     position: absolute;
-}
-.navtoggle.responsive li .icon {
-  display: none;
-}
+  }
 
-.navtoggle li .icon{
-  display: none;
-}
-.navtoggle.responsive li  {
-  display: inline-block;
-  position: relative;
-}
+  .navtoggle.responsive li .icon {
+    display: none;
+  }
 
-.navtoggle.responsive li:last-child {
-  display: none;
-}
+  .navtoggle li .icon {
+    display: none;
+  }
+
+  .navtoggle.responsive li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .navtoggle.responsive li:last-child {
+    display: none;
+  }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-body {
-  margin-top: 110px
-}
+  body {
+    margin-top: 110px;
+  }
 
-p{
-  margin: auto;
-  width: 80%;
-}
+  p {
+    margin: auto;
+    width: 80%;
+  }
 
   .col-lg-5 {
     width: 38%;
     float: right;
   }
+
   .col-lg-7 {
     width: 62%;
     float: left;
   }
+
   [class*="col-"] {
     float: left;
-    padding: 0 16px;
   }
 }
