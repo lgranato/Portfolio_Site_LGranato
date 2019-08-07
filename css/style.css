@@ -240,6 +240,11 @@ h2 {
 
 .page-about h2 {
   margin-top: 0;
+  text-align: center;
+}
+
+.page-about h3 {
+  margin: 0 16px;
 }
 
 .page-fyb h1 {
@@ -249,6 +254,7 @@ h2 {
 
 .page-fyb h2 {
   color: #b950d4;
+  margin: 0 16px;
 }
 
 .page-fyb .footer h2 {
@@ -278,6 +284,10 @@ h2 {
 
 img {
   width: 100%;
+}
+
+p {
+  margin: 0 36px;
 }
 
 a {
