@@ -170,6 +170,7 @@ h1, h2, h3, h4 {
   display: inline-block;
   width: 100%;
   text-align: center;
+  color: #fff;
 }
 
 #hero span {
@@ -186,6 +187,7 @@ h1, h2, h3, h4 {
 
 #hero .container {
   width: 80%;
+  color: #fff;
 }
 
 #about .row {
@@ -305,6 +307,7 @@ a:active {
   border-radius: 6px;
   transition: 0.2s opacity;
   text-decoration: none;
+  margin: 24px;
 }
 
 .button:hover {
@@ -317,6 +320,7 @@ a:active {
   color: #bf0000 !important;
   text-transform: uppercase;
   border: 3px solid #bf0000;
+  margin: 24px;
 }
 
 .button.contact:hover {
