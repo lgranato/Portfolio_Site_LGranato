@@ -215,6 +215,10 @@ h1, h2, h3, h4 {
   padding-top: 160px;
 }
 
+#fyb-challenges span {
+  width: 100%;
+}
+
 h1 {
   background-color: #8b0000;
   color: #fff;
@@ -257,6 +261,17 @@ h2 {
 .page-fyb h4 {
   text-align: center;
   color: #000;
+}
+
+.challenges p {
+  padding: 10px;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
+#about picture {
+  width: 75%;
 }
 
 img {
@@ -393,10 +408,6 @@ a:active {
     float: right;
   }
 
-  nav > ul {
-    display: inline-block;
-  }
-
   nav > ul > li {
     display: inline-block;
     position: relative;
@@ -408,11 +419,13 @@ a:active {
     position: absolute;
     width: 200px;
     height: 32px;
+    bottom: -10px;
+    left: 0;
   }
 
   nav > ul > li:hover > ul {
     display: block;
-    position: absolute;
+    position: relative;
   }
 
   .navtoggle.responsive li .icon {
@@ -477,6 +490,8 @@ a:active {
     position: absolute;
     width: 200px;
     height: 32px;
+    bottom: -10px;
+    left: 0;
   }
 
   nav > ul > li:hover > ul {
@@ -552,6 +567,8 @@ a:active {
     position: absolute;
     width: 200px;
     height: 32px;
+    bottom: -10px;
+    left: 0;
   }
 
   nav > ul > li:hover > ul {
